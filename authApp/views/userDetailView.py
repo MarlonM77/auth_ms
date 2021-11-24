@@ -26,7 +26,7 @@ class UserDeleteView(generics.DestroyAPIView):
     serializer_class = UserSerializer
 
     def update(self, request, *args, **kwargs):
-        return super().destroy(request, *args, **kwargs)
+        return super().destroy(self, request, *args, **kwargs)
 
 
 
